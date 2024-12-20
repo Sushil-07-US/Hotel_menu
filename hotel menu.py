@@ -56,6 +56,8 @@ while item1 in menu:
 
         else:
             print(f"We are out of order for {item2}")
+            print(f"Total bill for {item1} is ${items}") 
+            
             break
 
     else:
