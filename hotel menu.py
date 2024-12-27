@@ -17,7 +17,7 @@ print("Can I take your order please?")
 
 print("pasta  =  $1.00\ncoffee =  $1.00\npizza  =  $7.00\nburger =  $5.00\ncoke   =  $1.00")
 
-item1 = input("Order Please: ").capitalize()
+item1 = input("Order Please: ").capitalize().strip()
 
 
 items = 0
@@ -36,13 +36,13 @@ while item1 in menu:
 
     ran_slogan = random.choice(slogan)
     print(f"Your order is {item1}")
-    Ques = input("Do you want to order more Y/N: ").lower()
+    Ques = input("Do you want to order more Y/N: ").lower().strip()
     items+= menu[item1]
     
 
 
     if Ques == "y":
-        item2 = input("Another order please: ").capitalize()
+        item2 = input("Another order please: ").capitalize().strip()
 
         if item2 in menu:
             print(f"Your order is {item2}")
